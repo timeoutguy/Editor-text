@@ -1,0 +1,33 @@
+body{
+    background-color: #DDD;
+}
+
+.page-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+.text-editor{
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+.editor-actions{
+    padding: 20px;
+    margin-left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+button{
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+#title-action{
+    margin-right: 10px;
+}
