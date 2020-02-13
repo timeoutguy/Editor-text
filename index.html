@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Timeoutguy text editor </title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <h1 class="page-title"> Timeoutguy text editor </h1>
 
-    <div class="text-editor"> 
+    <section class="text-editor"> 
         <div class="editor-actions">
-            <div id="title-action">
-                <button> T </button>
-            </div>
-            <div>
-                <b> <button> B </button> </b>
+            <div class="btn-group">
+                <button id="title-action" onclick="format('heading', 'h2')"> <i class="material-icons"> title </i> </button>
+                <button id="bold-action" onclick="format('bold')"> <i class="material-icons"> format_bold </i> </button>
+                <button id="italic-action" onclick="format('italic')"> <i class="material-icons"> format_italic </i>  </button>
+                <button id="link-action" onclick="link()"> <i class="material-icons"> insert_link </i> </button>
+                <button id="quote-action" onclick="quote()"> <i class="material-icons"> format_quote </i> </button>
+                <button id="bullet-action" onclick="format('insertunorderedlist')"> <i class="material-icons"> format_list_bulleted </i> </button>
+                <button id="numbered-action" onclick="format('insertorderedlist')"> <i class="material-icons"> format_list_numbered </i> </button>
             </div>
         </div>
-    </div>
+    
+        <div class="text-zone"> </div>
+    </section>
+
+    <script src="editor.js"></script>
 </body>
 </html>
